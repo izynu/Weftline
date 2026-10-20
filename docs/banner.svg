@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-label="Weftline banner">
+  <!-- Weftline project banner. Dark grey surface, four accent threads
+       (amber, teal, green, rose) flowing through a grey warp.
+       Declarative SMIL animation only, no scripts, safe for rendering
+       inside GitHub README image tags. -->
+  <defs>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#212126"/>
+    </pattern>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="320" rx="18" fill="#121214"/>
+  <rect x="0.75" y="0.75" width="1198.5" height="318.5" rx="17.25" fill="none" stroke="#2a2a31" stroke-width="1.5"/>
+  <rect width="1200" height="320" rx="18" fill="url(#dots)"/>
+
+  <!-- chips -->
+  <rect x="60" y="56" width="128" height="30" rx="6" fill="#19191c" stroke="#2a2a31"/>
+  <text x="124" y="76" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#9c9ca6">v0.1.0, MIT</text>
+  <rect x="200" y="56" width="176" height="30" rx="6" fill="#19191c" stroke="#2a2a31"/>
+  <text x="288" y="76" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#9c9ca6">Agent Skills format</text>
+  <circle cx="88" cy="71" r="4" fill="#eca43c"/>
+  <circle cx="228" cy="71" r="4" fill="#2dd4bf"/>
+
+  <!-- wordmark -->
+  <text x="600" y="150" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="64" font-weight="600" letter-spacing="16" fill="#ecedf0">WEFTLINE</text>
+  <text x="600" y="188" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#9c9ca6">A cross-agent skill for disciplined frontend work</text>
+
+  <!-- warp threads -->
+  <g stroke="#232329" stroke-width="2">
+    <line x1="240" y1="228" x2="240" y2="296"/>
+    <line x1="300" y1="228" x2="300" y2="296"/>
+    <line x1="360" y1="228" x2="360" y2="296"/>
+    <line x1="420" y1="228" x2="420" y2="296"/>
+    <line x1="480" y1="228" x2="480" y2="296"/>
+    <line x1="540" y1="228" x2="540" y2="296"/>
+    <line x1="600" y1="228" x2="600" y2="296"/>
+    <line x1="660" y1="228" x2="660" y2="296"/>
+    <line x1="720" y1="228" x2="720" y2="296"/>
+    <line x1="780" y1="228" x2="780" y2="296"/>
+    <line x1="840" y1="228" x2="840" y2="296"/>
+    <line x1="900" y1="228" x2="900" y2="296"/>
+    <line x1="960" y1="228" x2="960" y2="296"/>
+  </g>
+
+  <!-- weft threads, flowing -->
+  <line x1="0" y1="244" x2="1200" y2="244" stroke="#eca43c" stroke-width="2.5" stroke-dasharray="16 12" opacity="0.9">
+    <animate attributeName="stroke-dashoffset" values="0;-28" dur="2.2s" repeatCount="indefinite"/>
+  </line>
+  <line x1="0" y1="261" x2="1200" y2="261" stroke="#2dd4bf" stroke-width="2.5" stroke-dasharray="16 12" opacity="0.9">
+    <animate attributeName="stroke-dashoffset" values="0;28" dur="1.8s" repeatCount="indefinite"/>
+  </line>
+  <line x1="0" y1="278" x2="1200" y2="278" stroke="#4cc38a" stroke-width="2.5" stroke-dasharray="16 12" opacity="0.9">
+    <animate attributeName="stroke-dashoffset" values="0;-28" dur="2.6s" repeatCount="indefinite"/>
+  </line>
+  <line x1="0" y1="295" x2="1200" y2="295" stroke="#e5484d" stroke-width="2.5" stroke-dasharray="16 12" opacity="0.9">
+    <animate attributeName="stroke-dashoffset" values="0;28" dur="2.0s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- shuttle dots travelling along the weft -->
+  <circle r="3.5" cy="244" fill="#eca43c" opacity="0.95">
+    <animate attributeName="cx" values="-10;1210" dur="9s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="3.5" cy="261" fill="#2dd4bf" opacity="0.95">
+    <animate attributeName="cx" values="1210;-10" dur="11s" begin="-3s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="3.5" cy="278" fill="#4cc38a" opacity="0.95">
+    <animate attributeName="cx" values="-10;1210" dur="13s" begin="-6s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="3.5" cy="295" fill="#e5484d" opacity="0.95">
+    <animate attributeName="cx" values="1210;-10" dur="10s" begin="-1.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- shimmer sweep -->
+  <rect x="-320" y="0" width="300" height="320" fill="url(#shine)">
+    <animate attributeName="x" values="-320;1520" dur="7s" repeatCount="indefinite"/>
+  </rect>
+</svg>
